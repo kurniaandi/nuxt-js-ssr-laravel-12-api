@@ -1,75 +1,77 @@
-# Nuxt Minimal Starter
+# 🚀 Tutorial Nuxt 4 (SSR) + Laravel 12 API
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Assalamu'alaikum warahmatullahi wabarakatuh,
+Halo teman-teman semua 👋
 
-## Setup
+Pada repository ini, kita akan belajar membangun **aplikasi web modern** dengan pendekatan **frontend-backend terpisah** (decoupled). Di sisi frontend, kita menggunakan **Nuxt.js versi 4** dalam mode **Server-Side Rendering (SSR)**. Sedangkan backend-nya dibangun dengan **Laravel 12** sebagai penyedia RESTful API.
 
-Make sure to install dependencies:
+Cocok banget buat kalian yang ingin belajar membangun aplikasi skala kecil hingga menengah dengan arsitektur yang lebih fleksibel dan terpisah antara tampilan dan logika server.
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## 🧩 Stack Teknologi
 
-# yarn
-yarn install
+| Komponen         | Deskripsi                                                    |
+| ---------------- | ------------------------------------------------------------ |
+| **Nuxt 4 SSR**   | Framework Vue 3 dengan kemampuan SSR dan komposisi modern yang powerful |
+| **Laravel 12**   | Backend API modern berbasis PHP dengan fitur bawaan lengkap dan elegan |
+| **Tailwind CSS** | CSS utility-first yang responsif dan mudah dikustomisasi     |
+| **Vite**         | Build tool bawaan Nuxt untuk hot-reload yang sangat cepat    |
 
-# bun
-bun install
+---
+
+## ⚙️ Persiapan Awal
+
+Pastikan sudah menginstall beberapa tools berikut sebelum menjalankan project:
+
+### Backend (Laravel 12)
+
+- PHP ^8.2
+- Composer
+- MySQL atau SQLite
+- Laravel 12 API (bisa clone dari repo backend)
+
+### Frontend (Nuxt 4)
+
+- Node.js & NPM (rekomendasi versi terbaru LTS)
+- Git
+- Nuxt.js 4 (SSR mode)
+
+---
+
+## 📂 Struktur Direktori (Frontend)
+
+Contoh struktur untuk fitur `product`:
+
+```
+app/
+    pages/
+    └── product/
+    ├── index.vue // List produk
+    ├── create.vue // Tambah produk
+    └── edit/
+    └── [id].vue // Edit produk
 ```
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## 🚧 Fitur yang Telah Dibuat
 
-```bash
-# npm
-npm run dev
+✅ Menampilkan daftar produk
+✅ Menambahkan produk baru
+✅ Mengedit data produk
+✅ Menghapus produk
+✅ Konsumsi API Laravel
+✅ Struktur folder yang rapi dan terorganisir
+✅ Meta tag dinamis untuk SEO (dengan `useHead`)
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+## 📘 Dokumentasi dan Tutorial Lengkap
 
-# bun
-bun run dev
+Untuk penjelasan lebih lanjut, Anda bisa membaca dokumentasi lengkap tutorial ini pada website resmi kami:
+
+```
+https://lagikoding.com/series/tutorial-laravel-12-dan-nuxt-js-4-fullstack-ssr-folder-app
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
